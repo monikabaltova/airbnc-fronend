@@ -64,35 +64,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-
-  nav,
-  ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .properties {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    max-width: 100%;
-  }
-
-  .properties li {
-    flex: 0 0 240px;
-  }
-
-  .properties img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-  }
 }

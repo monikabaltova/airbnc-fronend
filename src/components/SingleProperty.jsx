@@ -18,6 +18,22 @@ const SingleProperty = () => {
   return (
     <>
       <h2>{property.property_name}</h2>
+      {property.images &&
+        property.images.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt={`${property.property_name} ${index + 1}`}
+          />
+        ))}
+      <p>{property.location}</p>
+      <p>{property.description}</p>
+      <p>GBP {property.price_per_night}</p>
+      <p>{property.favourite_count}</p>
+      <div>
+        <img src={property.host_avatar} />
+        <p>{property.host}</p>
+      </div>
     </>
   );
 };
